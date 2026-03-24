@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voz Ativa - Protótipo iPhone 15</title>
+    <link rel = "stylesheet" type = "text/css" href = "style.css">
+</head>
+<body>
+
+<div class="iphone-15">
+    <div class="island"></div>
+
+    <div class="display-container">
+        <div id="frase-display">Toque em uma categoria...</div>
+    </div>
+
+    <div class="action-bar">
+        <button class="btn-action btn-clear" onclick="limpar()">🗑️</button>
+        <button class="btn-action btn-play" onclick="falar()">🔊 OUVIR</button>
+        <button class="btn-action btn-confirm" onclick="confirmar()">✅</button>
+    </div>
+
+    <div class="joystick-area">
+        <div class="category-label" id="cat-nome">Selecione Categoria</div>
+        
+        <div class="joystick-grid">
+            <button class="joy-btn" onclick="selecionar('1')"></button>
+            <button class="joy-btn" onclick="selecionar('2')"></button>
+            <button class="joy-btn" onclick="selecionar('3')"></button>
+            
+            <button class="joy-btn" onclick="selecionar('4')"></button>
+            <div class="joy-btn center-dot"></div>
+            <button class="joy-btn" onclick="selecionar('5')"></button>
+            
+            <button class="joy-btn" onclick="selecionar('6')"></button>
+            <button class="joy-btn" onclick="selecionar('7')"></button>
+            <button class="joy-btn" onclick="selecionar('8')"></button>
+        </div>
+    </div>
+
+    <div class="word-options"> </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
