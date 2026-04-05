@@ -11,6 +11,15 @@
 <div class="iphone-15">
     <div class="island"></div>
 
+    <button id="menu-btn" class="btn-menu-desativado">☰ Menu</button>   
+        <nav id="menu" class="hidden">
+        <ul>
+            <li><a href="#">Perfil</a></li>
+            <li><a href="/menu/editar_palavra.html">Editar palavras</a></li>
+            <li><a href="#">Contatos</a></li>
+        </ul>
+    </nav>
+
     <div class="display-container">
         <div id="frase-display">Toque em uma categoria...</div>
     </div>
@@ -42,6 +51,7 @@
     <div class="word-options"> </div>
 </div>
 
-<script src="script.js"></script>
+<script type="module" src="script.js"></script>
+<script src="secao_retratil.js"></script>
 </body>
 </html>

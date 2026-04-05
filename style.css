@@ -8,6 +8,7 @@
     --text-dark: #1F2937;
     --joystick-bg: #d2d5db;
     --card-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    --dist-menu-hidden: 150px;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; }
@@ -38,9 +39,58 @@ body {
 .island {
     width: 120px;
     height: 35px;
-    background: #000;
+    background: var(--text-dark);
     border-radius: 20px;
     margin: 12px auto;
+}
+
+#menu-btn{
+    width: 70px;
+    color: white;
+    position: absolute;
+    top: 40px;
+    right: 15px;
+    padding: 10px;
+    border-radius: 15px;
+    border: 0px;
+}
+
+.btn-menu-desativado{ background-color: var(--primary); }
+.btn-menu-action{ background-color: #5384ee; }
+
+#menu {
+    width: var(--dist-menu-hidden);
+    background: var(--bg-color);
+    color: var(--text-dark);
+    position: absolute;
+    top: 80px;
+    right: 0;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+#menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+#menu li {
+    margin: 10px 0;
+}
+
+#menu a {
+    color: var(--text-dark);
+    text-decoration: none;
+}
+
+/* escondido */
+.hidden {
+    transform: translateX(var(--dist-menu-hidden));
+}
+
+/* visível */
+.show {
+    transform: translateX(0);
 }
 
 /* Área de Visualização */
@@ -166,7 +216,7 @@ body {
     gap: 10px;
     padding: 20px;
     justify-content: center;
-    min-height: 150px;
+    min-height: 100px;
 }
 
 .word-chip {
