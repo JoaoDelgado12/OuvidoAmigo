@@ -1,4 +1,4 @@
-# 🗣️ Voz Ativa - Comunicação Assistiva Inteligente
+# 🗣️ CAALL - Comunicação Aumentativa e Assistiva para Todos
 
 O **Voz Ativa** é uma aplicação de Comunicação Alternativa e Aumentativa (CAA) projetada para oferecer autonomia a pessoas com limitações na fala.
 Com uma interface moderna inspirada no iOS (iPhone 15 Pro), o projeto utiliza um sistema de "Joystick de Palavras" para facilitar a construção de frases de forma rápida e intuitiva.
